@@ -1,0 +1,28 @@
+.individual-photo {
+    
+}
+.individual-photo__wrapper {
+    width: 100%;
+    margin: 0 auto;
+    .container();
+}
+.individual-photo__header {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.individual-photo__elem-description {
+    display: none;
+}
+
+@media @desktop-widths {
+    .individual-photo__elem-description {
+        display: block;
+    }
+    .individual-photo__elem-wrap {
+        display: flex;
+        flex-direction: row;
+    }
+}

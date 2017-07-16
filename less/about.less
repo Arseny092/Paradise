@@ -1,0 +1,45 @@
+.about {
+    margin: 0 auto;
+    background-color: @white;
+}
+.about__wrapper {
+    width: 100%;
+    .container();
+    margin: 0 auto;
+    min-height: 300px;
+    padding-bottom: 30px;
+}
+.about__header {
+    padding-top: 20px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+}
+.about__content {
+    padding-top: 30px;
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.about__image {
+    display: none;
+}
+
+@media @desktop-widths {
+    .about {
+        display: flex;
+        flex-direction: row;
+    }
+    .about__image {
+        display: flex;
+        flex-grow: 2;
+    }
+    .about__content {
+        text-align: left;
+        width: 500px;
+        margin: 0 auto;
+    }
+    .about__header {
+        margin: 0 auto; 
+    }
+}

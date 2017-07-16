@@ -1,0 +1,36 @@
+.page-header {
+    color: black;
+    background: @white;
+    position: relative;
+}
+.page-header__wrapper {
+    width: 100%;
+    .container();
+    margin: 0 auto;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.page-header__logo {
+    display: block;
+    padding-top: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    margin-right: 135px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+@media @tablet-widths {
+    .page-header__wrapper {
+        display: flex;
+    }
+    .page-header__logo {
+        order: 2;
+        margin-left: 60%;
+    }
+    .page-header {
+        min-height: 60px;
+    }
+}
