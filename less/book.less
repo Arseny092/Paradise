@@ -1,6 +1,6 @@
 .book {
     min-height: 700px;
-    background-color: #FFE4E1;
+    background-color: @pinky;
 }
 .book__form-header {
     margin: 0 auto;
@@ -32,6 +32,8 @@
     margin-top: 20px;
 }
 ::placeholder {
+    font-family: "Opens Sans", Arial, sans-serif;
+    font-style: normal;
     color: @dark-grey;
     text-overflow: ellipsis;
 }
@@ -52,9 +54,29 @@
     background-color: transparent;
     border-radius: 20px;
     border: 2px solid black;
+    cursor: pointer;
     &:hover {
         background-color: black;
         color: white;
         border: 2px solid black;
+    }
+}
+@media @desktop-widths {
+    .book {
+        min-height: 400px;
+    }
+    .book__form-maincol {
+        display: flex;
+        margin: 0 auto;
+    }
+    .book__form-col1 {
+        flex-grow: 1;
+    }
+    .book__form-col2 {
+        flex-grow: 1;
+    }
+    .book__form-text {
+        margin-top: -4px;
+        padding-bottom: 28px;
     }
 }

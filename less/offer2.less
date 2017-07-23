@@ -1,6 +1,7 @@
 .offer2 {
-    background-color: #FFE4E1;
-    min-height: 130px;
+    background-color: @pinky;
+    height: 150px;
+    margin: 0 auto;
 }
 .offer2__header {
     width: 100%;
@@ -12,4 +13,14 @@
     font-weight: 500;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+@media @tablet-widths {
+    .offer2 {
+        height: 100px;
+    } 
+}
+@media @desktop-widths {
+    .offer2 {
+        height: 80px;
+    }
 }
