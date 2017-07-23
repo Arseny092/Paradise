@@ -1,13 +1,8 @@
 .about {
+    .container();
+    width: 100%;
     margin: 0 auto;
     background-color: @white;
-}
-.about__wrapper {
-    width: 100%;
-    .container();
-    margin: 0 auto;
-    min-height: 300px;
-    padding-bottom: 30px;
 }
 .about__header {
     padding-top: 20px;
@@ -31,8 +26,12 @@
         flex-direction: row;
     }
     .about__image {
-        display: flex;
-        flex-grow: 2;
+        display: block;
+        width: 50%;
+    }
+    .about__img {
+        max-width: 100%;
+        height: auto;
     }
     .about__content {
         text-align: left;
@@ -40,6 +39,7 @@
         margin: 0 auto;
     }
     .about__header {
-        margin: 0 auto; 
+        margin: 0 auto;
+        margin-top: 30px;
     }
 }

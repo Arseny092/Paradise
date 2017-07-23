@@ -10,25 +10,23 @@
     position: relative;
 }
 .slider__pic {
-    max-width: 100%;
-    min-height: 450px;
-    background-image: url(../img/mobile.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: 50%;
-    background-position-x: 50%;
+    display: block;
+    width: 100%;
+    overflow: hidden;
 }
 .slider__item img {
+    display: block;
+    width: 100%;
     max-width: 100%;
+    height: auto;
 }
 @media @tablet-widths {
-    .slider__pic {
-        background-image: url(../img/tablet.jpg);
+    .slider__item img {
+        //height: 70vh;
     }
 }
 @media @desktop-widths {
-    .slider__pic {
-        background-image: url(../img/desktop.jpg);
-        min-height: 600px;
+    .slider__item img {
+        //height: 95vh;
     }
 }
