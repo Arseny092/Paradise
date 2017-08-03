@@ -1,0 +1,26 @@
+.prices {
+    background-color: @pinky;
+    height: 70px;
+}
+.prices__wrapper {
+    width: 100%;
+    .container();
+    margin: 0 auto;
+    padding-bottom: 20px;
+    display: flex;
+    font-size: 18px;
+}
+.prices__bread {
+    display: none;
+}
+@media @desktop-widths {
+    .prices__wrapper {
+        justify-content: space-between;
+    }
+    .prices__content {
+        margin-left: 50px;
+    }
+    .prices__bread {
+        display: flex;
+    }
+}

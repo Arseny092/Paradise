@@ -1,22 +1,17 @@
 'use strict';
 
-var $cross = $('.burger--cross'),
+$(document).ready(function() {
+    
+    var $cross = $('.burger--cross'),
     $menu = $('.main-nav__items'),
     $burger = $('.burger');
     
-$cross.hide();
-$menu.hide();
-
-$burger.on('click', function() {
-    $menu.slideToggle('slow', function() {
-        $burger.hide();
-        $cross.show();
+    $burger.on('click', function() {
+        $menu.slideToggle(500);
     });
-});
-
-$cross.on('click', function() {
-    $menu.slideToggle('slow', function() {
-        $cross.hide();
-        $burger.show();
+    $(window).resize(function() {
+        if($(window).width() > 960) {
+            $menu.removeAttr('style');
+        }
     });
 });
